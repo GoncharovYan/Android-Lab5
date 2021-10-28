@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/BNEvents"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:title="@string/events"/>
+
+    <item
+        android:id="@+id/BNHolidays"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_cake_24"
+        android:title="@string/holidays"/>
+
+    <item
+        android:id="@+id/BNProfile"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_pregnant_woman_24"
+        android:title="@string/profile"/>
+
+</menu>
