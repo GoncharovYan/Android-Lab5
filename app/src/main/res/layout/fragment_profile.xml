@@ -5,7 +5,7 @@
     android:background="@color/black">
 
     <TextView
-        android:id="@+id/ProfileText"
+        android:id="@+id/profileText"
 
         android:layout_gravity="center"
         android:layout_width="wrap_content"

@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.BottomNavigation.setOnNavigationItemReselectedListener { item ->
+        binding.bottomNavigation.setOnNavigationItemReselectedListener { item ->
             when(item.itemId) {
                 R.id.BNEvents -> {
                     supportFragmentManager.beginTransaction()

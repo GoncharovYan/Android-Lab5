@@ -16,13 +16,13 @@ class EventsAdapter : RecyclerView.Adapter<EventViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventViewHolder {
-        val inflater = LayoutInflater.from(parent.context)
-        return EventViewHolder(inflater.inflate(R.layout.event_unit, parent, false))
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.event_unit, parent, false)
+        return EventViewHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: EventViewHolder, position: Int) {
         holder.bind(eventsList[position])
     }
 
-    override fun getItemCount(): Int = eventsList.size
+    override fun getItemCount() = eventsList.size
 }
