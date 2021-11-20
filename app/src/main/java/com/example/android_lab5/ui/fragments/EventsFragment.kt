@@ -33,10 +33,11 @@ class EventsFragment : Fragment() {
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.adapter = eventsAdapter
         recyclerView.layoutManager = LinearLayoutManager(context)
-        //eventsAdapter.reload(listOf<EventData>(EventData("Christmas", "some desc to Christmas", "25.12"),
-        //    EventData("New Year", "some desc to New Year", "31.12"),
-        //    EventData("Birthday", "some desc to Birthday", "32.12"),
-        //    EventData("Tire Fitter Day", "<3", "26.04")))
+
+        eventsAdapter.reload(listOf<EventData>(EventData("Christmas", "some desc to Christmas", "25.12"),
+            EventData("New Year", "some desc to New Year", "31.12"),
+            EventData("Birthday", "some desc to Birthday", "32.12"),
+            EventData("Tire Fitter Day", "<3", "26.04")))
 
         val model: EventViewModel by viewModels()
         model.getEvents().observe(viewLifecycleOwner) {
