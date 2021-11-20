@@ -7,7 +7,7 @@ import com.example.android_lab4.databinding.ActivityMainBinding
 
 import com.example.android_lab4.fragments.EventsFragment
 import com.example.android_lab4.fragments.HolidayFragment
-import com.example.android_lab4.fragments.ProfileFragment
+import com.example.android_lab5.ui.fragments.profile.ProfileFragment
 
 class MainActivity : AppCompatActivity() {
 

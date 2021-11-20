@@ -1,6 +1,13 @@
 <resources>
-    <string name="app_name">Android-Lab4</string>
+    <string name="app_name">Event Reminder</string>
     <string name="events">Events</string>
     <string name="holidays">Holidays</string>
     <string name="profile">Profile</string>
+
+    <string name="settingsLabel">Settings</string>
+    <string name="aboutLabel">About</string>
+
+    <string name="shareFriends">Share friends</string>
+    <string name="shareDescription">Great app!!!</string>
+    <string name="inWork">Still in work</string>
 </resources>

@@ -18,6 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.example.android_lab5.ui.fragments.profile.SettingsActivity"/>
+        <activity android:name="com.example.android_lab5.ui.fragments.profile.AboutActivity"/>
     </application>
 
 </manifest>
