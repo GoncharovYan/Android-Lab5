@@ -1,7 +1,8 @@
-package com.example.android_lab4
+package com.example.android_lab5.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.android_lab4.R
 import com.example.android_lab4.databinding.ActivityMainBinding
 
 import com.example.android_lab4.fragments.EventsFragment
