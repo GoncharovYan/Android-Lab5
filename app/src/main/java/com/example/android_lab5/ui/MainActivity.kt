@@ -2,10 +2,11 @@ package com.example.android_lab5.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.android_lab4.R
 import com.example.android_lab4.databinding.ActivityMainBinding
 
-import com.example.android_lab4.fragments.EventsFragment
+import com.example.android_lab5.ui.fragments.event.EventsFragment
 import com.example.android_lab4.fragments.HolidayFragment
 import com.example.android_lab5.ui.fragments.profile.ProfileFragment
 
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        Log.d("msa", "Main created")
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -42,5 +43,15 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
+    }
+
+    override fun onStop() {
+        Log.d("msa", "Main is closed")
+        super.onStop()
+    }
+
+    override fun onDestroy() {
+        Log.d("msa", "Main destroyed")
+        super.onDestroy()
     }
 }

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Progr/Projects/Android/AndroidLab5/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.22135416666666666" />
         <entry key="..\:/Progr/Projects/Android/AndroidLab5/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.29739583333333336" />
         <entry key="..\:/Progr/Projects/Android/AndroidLab5/app/src/main/res/layout/activity_about.xml" value="0.20572916666666666" />
         <entry key="..\:/Progr/Projects/Android/AndroidLab5/app/src/main/res/layout/activity_main.xml" value="0.29257246376811596" />
@@ -10,6 +11,7 @@
         <entry key="..\:/Progr/Projects/Android/AndroidLab5/app/src/main/res/layout/event_unit.xml" value="0.28940217391304346" />
         <entry key="..\:/Progr/Projects/Android/AndroidLab5/app/src/main/res/layout/fragment_events.xml" value="0.20833333333333334" />
         <entry key="..\:/Progr/Projects/Android/AndroidLab5/app/src/main/res/layout/fragment_holidays.xml" value="0.28940217391304346" />
+        <entry key="..\:/Progr/Projects/Android/AndroidLab5/app/src/main/res/layout/fragment_newevent.xml" value="0.28125" />
         <entry key="..\:/Progr/Projects/Android/AndroidLab5/app/src/main/res/layout/fragment_profile.xml" value="0.28940217391304346" />
         <entry key="..\:/Progr/Projects/Android/AndroidLab5/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2824074074074074" />
       </map>

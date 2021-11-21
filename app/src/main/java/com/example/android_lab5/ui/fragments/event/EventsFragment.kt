@@ -1,19 +1,21 @@
-package com.example.android_lab4.fragments
+package com.example.android_lab5.ui.fragments.event
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
+import androidx.fragment.app.*
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android_lab4.R
+import com.example.android_lab4.fragments.HolidayFragment
 import com.example.android_lab5.etc.EventData
 import com.example.android_lab5.etc.EventViewModel
 import com.example.android_lab5.etc.EventsAdapter
+import com.example.android_lab5.ui.MainActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class EventsFragment : Fragment() {
 
@@ -42,6 +44,12 @@ class EventsFragment : Fragment() {
         val model: EventViewModel by viewModels()
         model.getEvents().observe(viewLifecycleOwner) {
             eventsAdapter.reload(it)
+        }
+
+
+        val fab = view.findViewById<FloatingActionButton>(R.id.fab)
+        fab.setOnClickListener {
+            parentFragmentManager.beginTransaction().replace(R.id.container, NewEventFragment()).addToBackStack(null).commit()
         }
 
     }

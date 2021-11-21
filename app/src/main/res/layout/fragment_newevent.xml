@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/borderPaddingMedium">
+
+    <TextView
+        android:id="@+id/newEventTitle"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/newEventTitle"
+        android:textSize="@dimen/textSizeLarge"/>
+
+    <EditText
+        android:id="@+id/newEventTitleEdit"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newEventTitle"/>
+
+    <TextView
+        android:id="@+id/newEventDescribe"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/marginMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newEventTitleEdit"
+
+        android:text="@string/newEventDescribe"
+        android:textSize="@dimen/textSizeLarge"/>
+
+    <EditText
+        android:id="@+id/newEventDescribeEdit"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newEventDescribe"/>
+
+    <TextView
+        android:id="@+id/newEventDate"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/marginMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newEventDescribeEdit"
+
+        android:text="@string/newEventDate"
+        android:textSize="@dimen/textSizeLarge"/>
+
+    <EditText
+        android:id="@+id/newEventDateEdit"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newEventDate"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/newEventButton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:text="@string/newEventAddButtonText"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

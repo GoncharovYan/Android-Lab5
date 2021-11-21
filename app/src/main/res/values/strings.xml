@@ -9,5 +9,12 @@
 
     <string name="shareFriends">Share friends</string>
     <string name="shareDescription">Great app!!!</string>
+
+
+    <string name="newEventTitle">Enter the title of the event :</string>
+    <string name="newEventDescribe">Describe :</string>
+    <string name="newEventDate">Date? :</string>
+
     <string name="inWork">Still in work</string>
+    <string name="newEventAddButtonText">ADD</string>
 </resources>
